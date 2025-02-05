@@ -1,0 +1,4 @@
+{
+    "vert": "#version 330 core\nlayout(location = 0) in vec2 vert;\nlayout(location = 1) in vec2 texcoord;\nout vec2 uvs;\nvoid main() {\n    uvs = texcoord;\n    gl_Position = vec4(vert, 0.0, 1.0);\n}",
+    "frag": "#version 330 core\nout vec4 FragColor;\nin vec2 uvs;\nvoid main() {\n    FragColor = vec4(uvs, 0.0, 1.0);\n}"
+}
